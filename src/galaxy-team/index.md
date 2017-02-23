@@ -1,10 +1,25 @@
 # People
 
-Galaxy is developed by the [Nekrutenko lab](http://nekrut.bx.psu.edu) in the [Center for Comparative Genomics and Bioinformatics at Penn State ](http://www.bx.psu.edu) and the [Taylor lab](http://taylorlab.org) at [Johns Hopkins University](http://www.jhu.edu), along with contributions from the community.
+Galaxy is developed by the [Nekrutenko lab](http://nekrut.bx.psu.edu) in the [Center for Comparative Genomics and Bioinformatics at Penn State](http://www.bx.psu.edu) and the [Taylor lab](http://taylorlab.org) at [Johns Hopkins University](http://www.jhu.edu), along with contributions from the community.
 
 
 ## Core Team
 <div class="row row-fluid text-center">
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <a href='/src/people/enis-afgan/index.md'><img src="/src/galaxy-team/EnisAfgan.jpg" alt="Enis Afgan">
+      <div class="caption">
+        <h3>Enis Afgan</h3>
+        <p>About Enis.</p>
+        <p><a href="http://www.jhu.edu" class="btn btn-primary" role="button">Johns Hopkins</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class='col-md-3'><a href='/src/people/enis-afgan/index.md'><img src="/src/galaxy-team/EnisAfgan.jpg" alt="Enis Afgan" height="150" /></a><br /> 
 [Enis Afgan](/src/people/enis-afgan/index.md) <br /> 
 [Johns Hopkins](http://www.jhu.edu) 
