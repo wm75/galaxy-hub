@@ -1,0 +1,48 @@
+extends layout.pug
+
+block content
+    section.section-content
+        div.row
+            div.jumbotron
+                h1.text-center !{ title }
+                h2.text-center(style="margin: 0 0 60px") !{ splash }
+                div.row
+                    a( href="/cloud/docs/" class="btn btn-primary btn-lg col-sm-3 col-sm-offset-2" style="color: white" ) Documentation
+                    |
+                    span.col-sm-2
+                    |
+                    a( href="https://beta.launch.usegalaxy.org/" class="btn btn-primary btn-lg col-sm-3" style="color: white" ) Go to launch
+
+        div.row
+            h1 Why use Galaxy on the cloud?
+            div.col-sm-12
+                block why
+                    div !{ why }
+
+        div.row
+            h1 When to use Galaxy on the cloud?
+            div.col-sm-12
+                block when
+                    div !{ when }
+                    ul
+                        each item in when_reasons
+                            li !{ item.reason }
+                div Keep in mind, cloud infrastructures are just
+                    |
+                    a( href="/choices/" )  one of the many ways that Galaxy is available
+                    | .
+
+        div.row
+            h1 Available solutions
+            each item in solutions
+                div.col-sm-4.cloud-solution
+                    if item.solution.commercial
+                        span.fa.fa-phone.pull-right(style="font-size:2.5em; color:#9d9d9d;")
+                    img( src=item.solution.logo alt=item.solution.name style="height: 100px;")
+                    h4 #{item.solution.name}
+                    div #{item.solution.pitch}
+                    hr
+                    a( href=item.solution.url ) LEARN MORE
+
+            small.pull-right(style="margin-top: 20px;")
+                span.fa.fa-phone  icon indicates the given solution offers commercial support.
