@@ -74,10 +74,6 @@ curl -H "Authorization: Token b38faadf2ef6d59ce46711ed73e99d6..." \
 
 substituting your token as obtained above in *Getting an API Token*.
 
-### Using coreapi
-
-To be completed...
-
 ### Using cloudlaunch-cli
 
 [cloudlaunch-cli](https://github.com/CloudVE/cloudlaunch-cli) is a command line
@@ -89,9 +85,9 @@ cloudlaunch-cli:
     python3 -m venv venv
     source venv/bin/activate
     ```
-2. Install `cloudlaunch-cli` from GitHub
+2. Install `cloudlaunch-cli` with pip
     ```
-    pip install git+https://github.com/CloudVE/cloudlaunch-cli.git#egg=cloudlaunch-cli
+    pip install cloudlaunch-cli
     ```
 3. The CloudLaunch CLI requires two config settings. First is the URL of the API root:
     ```
