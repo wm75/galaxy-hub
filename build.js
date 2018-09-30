@@ -200,14 +200,15 @@ class Renderer extends marked.Renderer {
 `;
     }
     table(header, body) {
-        return `<table class="table table-striped">
-<thead>
-${header}
-</thead>
-<tbody>
-${body}
-</tbody>
-</table>`;
+        return `
+            <table class="table table-striped">
+                <thead>
+                    ${header}
+                </thead>
+                <tbody>
+                    ${body}
+                </tbody>
+            </table>`;
     }
     image(href, title, text) {
         let out = `<img class="img-fluid" src="${href}" alt="${text}"`;
@@ -278,6 +279,7 @@ let ms = metalsmith(__dirname)
     .use(
         require("metalsmith-markdown")({
             gfm: true,
+            tables: true,
             renderer: new Renderer()
         })
     )
