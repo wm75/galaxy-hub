@@ -57,7 +57,7 @@ There are a wealth of resources for learning and deploying Galaxy to further you
 
 Galaxy is a fully open community and everyone who uses Galaxy *is a community member.* Welcome aboard.
 
-Please **get involved!**   *The Galaxy community values all types of contribution.*  This ranges from bug reporting or sharing an analysis, to planning an event or presenting training, to developing new software components, and everything in between.  The community needs active members on all of our support channels, every day. We also need help wrapping new tools, writing new test cases, and updating documentation.  We want you to help, and there are numerous ways in whichy you can.
+Please **get involved!**   *The Galaxy community values all types of contribution:*  Bug reporting, sharing your analyses, planning an event, presenting training, developing new software components, and everything in between.  The community needs active members on all of our support channels, every day. We also need help wrapping new tools, writing new test cases, and updating documentation.
 
 # Contact
 
