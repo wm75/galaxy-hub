@@ -39,6 +39,35 @@ We estimate that there are thousands of installed Galaxy instances around the wo
 
 Galaxy also has many regional and domain-specific communities that serve the needs of these communities.  
 
+# Learn
+
+There are a wealth of resources for learning and deploying Galaxy to further your (and your community's) research.
+
+* Using Galaxy
+  * How to use Galaxy for my data analsyis
+  * Which Galaxy platform to use for my data analysis
+  * Find supporting information, and get help
+
+* Running my own Galaxy server
+  * Deployment platform options from your own laptop to institutional HPC to public clouds
+  * How to configure, deploy and manage your own server
+  * How to find answers and get help
+
+# Join
+
+Galaxy is a fully open community and everyone who uses Galaxy *is a community member.* Welcome aboard.
+
+Please **get involved!**   *The Galaxy community values all types of contribution.*  This ranges from bug reporting or sharing an analysis, to planning an event or presenting training, to developing new software components, and everything in between.  The community needs active members on all of our support channels, every day. We also need help wrapping new tools, writing new test cases, and updating documentation.  We want you to help, and there are numerous ways in whichy you can.
+
+# Contact
+
+Want to learn more, but aren't sure where to start?  Here are some options.
+
+* Galaxy support channels
+* The Galaxy Outreach team
+* Different Galaxy communities
+* Galaxy leadership
+
 # Funding
 
 Galaxy is funded by a international group of funding sources. [Link]
