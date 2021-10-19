@@ -7,8 +7,8 @@ It seems that when a hyperlink points to a file, Gridsome usually moves the file
 
 None of the links below were touched by mdfixer, so it's all Gridsome rewriting them.
 
-<div class="compact">
 
+<div class="compact">
 
 Link Type
 ---------
@@ -49,7 +49,7 @@ File Type
 
 **Article/Build**: Placed in `/assets/static/` directly, with a munged filename. Looks like it's appended with the key + a hash.
 
-**VueArticle**: *The links get broken completely.* The filename is stripped entirely, even the slash preceding it. So the href for these ends up as just `/0tests`.
+**VueArticle**: *The links get broken completely.* The filename is stripped entirely, even the slash preceding it. So the href for these ends up as just `/0tests/file-links`.
 
 #### .png
 
@@ -65,8 +65,8 @@ File Type
 |------------|---------|---------------------------------------------------------------------------|
 | Article    | Develop | `/assets/static/build/content-md/0tests/file-links/button.png?width=100&key=2ab13f8` |
 | Article    | Build   | `/assets/static/button.6f4ef45.ef179782dfbee5a987fdf0dac5aa8fea.png`      |
-| VueArticle | Develop | `/0tests`                                                                 |
-| VueArticle | Build   | `/0tests`                                                                 |
+| VueArticle | Develop | `/0tests/file-links`                                                      |
+| VueArticle | Build   | `/0tests/file-links`                                                      |
 
 #### .jpg
 
@@ -82,8 +82,8 @@ File Type
 |------------|---------|---------------------------------------------------------------------------|
 | Article    | Develop | `/assets/static/build/content-md/0tests/file-links/NabbleN.jpg?width=50&key=04c8b57` |
 | Article    | Build   | `/assets/static/NabbleN.0d639c8.5dda6c5998f3bb491c1d7a5cca692cb5.jpg`     |
-| VueArticle | Develop | `/0tests`                                                                 |
-| VueArticle | Build   | `/0tests`                                                                 |
+| VueArticle | Develop | `/0tests/file-links`                                                      |
+| VueArticle | Build   | `/0tests/file-links`                                                      |
 
 <br />
 
