@@ -13,7 +13,7 @@ main_subsite: freiburg
 ![biohackathon logo](https://biohackathon-europe.org/img/biohackathon-logo-white.svg)
 
 
-This year, [BioHackathon Europe](https://biohackathon-europe.org/index.html) in Barcelona took place between the 4th and 8th of November. Some members of the Galaxy Community went there and participated in various Galaxy-related projects. The event was a total blast: 5 days in a remote area to work, code, have fun, eat and discuss with the 150 other participants from all over Europe (even Australia)!
+This year, [BioHackathon Europe](https://biohackathon-europe.org/index.html) in Barcelona took place between the 4th and 8th of November. Many members of the Galaxy Community went there and participated in various Galaxy-related projects. The event was a total blast: 5 days in a remote area to work, code, have fun, eat and discuss with the 150 other participants from all over Europe (even Australia)!
 
 The main projects that interacted with Galaxy were:
 
@@ -36,10 +36,17 @@ microbiome analysis service)[http://preview.biohackrxiv.org/papers/154602ea-ae08
 
 # [Project 22](https://github.com/elixir-europe/biohackathon-projects-2024/blob/main/22.md)
 
-The objective of the project can be divided into two milestones:
+In this collaboration between several ELIXIR partners and federated EGA nodes we managed to securely connect the [EGA's Live Distribution outbox](https://ega-archive.org/access/download/files/live-outbox/) directly to Galaxy as a user-specific remote file source. This [new functionality](https://github.com/wm75/galaxy/tree/crypt4gh-via-ssh-fs) facilitates the mobilization of sensitive, access-restricted human genetic data stored with the EGA for downstream analysis on the Galaxy platform.
 
-* Development of a workflow that connects EGA, either central or any federated node, and Galaxy through Crypt4GH protocols.
-* Galaxy's secure processing protocol: Sensitive datasets are kept encrypted throughout, with sensitive derivative results labelled as sensitive.
+We developed two flavors of this integration that enable users to access their live outbox at the EGA from the data upload dialogue of their Galaxy instance and pull the data into their Galaxy analysis history:
+
+1. in its original Crypt4GH-encrypted form
+
+   This flavor is intended for use on [sensitive data-enabled instances of Galaxy](https://f1000research.com/posters/12-1161) as [prototyped](https://github.com/elixir-europe/galaxy-is-wp2/tree/galaxy-is-wp2-client-reencrypt-new) as part of the ELIXIR Implementation Study "Strengthen Data Management in Galaxy". Such Galaxy instances will be able to operate on Crypt4GH-encrypted data, which will only be decrypted temporarily on trusted compute nodes that require data access for a specific data analysis step, in an otherwise standard environment.
+
+2. in decrypted form (with transparent decryption by the Galaxy framework during data transfer)
+
+   This form is useful for data processing on regular instances of Galaxy set up inside trusted research environments.
 
 # [Project 26](https://github.com/elixir-europe/biohackathon-projects-2024/blob/main/26.md)
 We focused on making computational data analysis more environmentally sustainable through improvements to Galaxy. By leveraging Galaxy's control over resource usage, we aimed to reduce the environmental impact of workflows via two key initiatives: job caching and environmentally friendly job scheduling.
